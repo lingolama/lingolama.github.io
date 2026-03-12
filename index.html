@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Surabhi Mehrotra — Educator, Researcher & Language Trainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ANN BAR -->
+<div class="ann-bar">🎓 Currently accepting students for 2026 cohorts — <a href="#contact">Book a free discovery call →</a></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">Surabhi <em>Mehrotra</em></a>
+
+  <ul class="nav-center" id="navLinks">
+    <!-- Free Resources dropdown -->
+    <li id="ddResources">
+      <button class="nav-btn-link" onclick="toggleDD('ddResources')">
+        Free Resources
+        <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div class="dropdown mega">
+        <div class="drop-col">
+          <div class="drop-section-title">Browse by Type</div>
+          <a class="drop-item" href="#resources"><div class="drop-icon">📝</div><div class="drop-item-text"><strong>Articles & Guides</strong><span>Evidence-based reads</span></div></a>
+          <a class="drop-item" href="#blog"><div class="drop-icon">✍️</div><div class="drop-item-text"><strong>Su.Blog</strong><span>Personal essays & reflections</span></div></a>
+          <a class="drop-item" href="#resources"><div class="drop-icon">🧠</div><div class="drop-item-text"><strong>Study Tips</strong><span>For school & university</span></div></a>
+        </div>
+        <div class="drop-col">
+          <div class="drop-section-title">Browse by Topic</div>
+          <a class="drop-item" href="#help"><div class="drop-icon">💡</div><div class="drop-item-text"><strong>Critical Thinking</strong><span>For Grades 5–10</span></div></a>
+          <a class="drop-item" href="#help"><div class="drop-icon">📖</div><div class="drop-item-text"><strong>Language Skills</strong><span>ESL & academic English</span></div></a>
+          <a class="drop-item" href="#help"><div class="drop-icon">🔬</div><div class="drop-item-text"><strong>Research Writing</strong><span>Papers, thesis & more</span></div></a>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="#blog">Su.Blog</a></li>
+    <li><a href="#essays" style="color:var(--gold);font-weight:600">🏆 Essay Competitions</a></li>
+
+    <!-- Courses dropdown -->
+    <li id="ddCourses">
+      <button class="nav-btn-link" onclick="toggleDD('ddCourses')">
+        Courses
+        <svg viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div class="dropdown" style="min-width:260px">
+        <div class="drop-section-title">All Offerings</div>
+        <a class="drop-item" href="#help"><div class="drop-icon">🧠</div><div class="drop-item-text"><strong>Critical Thinking</strong><span>Grades 5, 6, 7, 10</span></div></a>
+        <a class="drop-item" href="#help"><div class="drop-icon">✍️</div><div class="drop-item-text"><strong>Research & Paper Writing</strong><span>UG & PG level</span></div></a>
+        <a class="drop-item" href="#help"><div class="drop-icon">🗣️</div><div class="drop-item-text"><strong>Spoken English</strong><span>School to corporate</span></div></a>
+        <a class="drop-item" href="#help"><div class="drop-icon">🌍</div><div class="drop-item-text"><strong>IB Transition</strong><span>UK schools & beyond</span></div></a>
+      </div>
+    </li>
+
+    <li><a href="#phd">PhD in the UK</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <a class="nav-subscribe" href="#newsletter">Join the Newsletter</a>
+    <button class="hamburger" id="hamburgerBtn" onclick="openMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" onclick="closeMobileNav(event)">
+  <div class="mobile-nav-panel">
+    <button class="mobile-close" onclick="closeMobileNav()">✕</button>
+    <div class="mobile-links">
+      <a href="#essays">🏆 Essay Competitions</a>
+      <a href="#resources">Free Resources</a>
+      <a href="#blog">Su.Blog</a>
+      <a href="#help">Courses</a>
+      <a href="#phd">PhD in the UK</a>
+      <a href="#about">About</a>
+      <a href="#essays">Essay Competitions 2026</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home">
+<div id="hero">
+  <div class="hero-text fade-up">
+    <p class="hero-hi"><span class="wave">👋</span> Hey there, I'm Surabhi</p>
+    <h1 class="hero-headline">I help people learn better —<br>through <em>language, thinking,</em><br>and a little bit of research.</h1>
+    <p class="hero-sub">English Language Trainer, Academic Writer & PhD Researcher at the University of Essex. Over 10 years of teaching experience across India — working with school students, university learners, and corporate professionals.</p>
+
+    <div class="hero-nl">
+      <div class="hero-nl-label">📬 Su.Newsletter</div>
+      <div class="hero-nl-title">Tips, resources & research insights — straight to your inbox.</div>
+      <div class="hero-nl-sub">Free, weekly, always useful. Join hundreds of learners across India.</div>
+      <div class="nl-form">
+        <input type="email" placeholder="your@email.com"/>
+        <button type="button" onclick="nlSubmit(this)">Subscribe →</button>
+      </div>
+      <div class="nl-social-proof">
+        <div class="nl-avatars">
+          <div class="nl-avatar">A</div><div class="nl-avatar">S</div><div class="nl-avatar">R</div><div class="nl-avatar">P</div>
+        </div>
+        <div class="nl-proof-text">Join <strong>500+ learners</strong> already subscribed</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-img-wrap fade-up" style="transition-delay:.15s">
+    <div class="hero-img-bg"></div>
+    <img src="images/surabhi.png" alt="Surabhi Mehrotra"/>
+    <div class="hero-badge-float">
+      <div class="hbf-label">🎓 Currently</div>
+      <div class="hbf-title">PhD Researcher</div>
+      <div class="hbf-sub">University of Essex, UK</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PRESS -->
+<div class="press-strip">
+  <div class="press-label">Credentials & Affiliations</div>
+  <div class="press-logos">
+    <span class="press-logo">University of Essex</span>
+    <span class="press-logo">Christ University</span>
+    <span class="press-logo">UGC — NET Qualified</span>
+    <span class="press-logo">British Council</span>
+    <span class="press-logo">IB Curriculum</span>
+  </div>
+</div>
+
+<!-- HOW CAN I HELP -->
+<section id="help">
+  <div class="help-header fade-up">
+    <h2>How Can I <em>Help You?</em></h2>
+  </div>
+  <div class="help-grid">
+    <a class="help-card fade-up" href="#resources">
+      <div class="help-card-icon">🧠</div>
+      <h3>Think More Critically</h3>
+      <p>Build reasoning and analytical skills through structured courses designed for school students from Grade 5 to 10.</p>
+      <div class="help-card-link">Get started</div>
+    </a>
+    <a class="help-card fade-up" href="#resources" style="transition-delay:.07s">
+      <div class="help-card-icon">✍️</div>
+      <h3>Write Better Research</h3>
+      <p>Learn academic writing, citations, and paper structure — from choosing your topic to submitting a polished thesis.</p>
+      <div class="help-card-link">Get started</div>
+    </a>
+    <a class="help-card fade-up" href="#resources" style="transition-delay:.14s">
+      <div class="help-card-icon">🗣️</div>
+      <h3>Master English</h3>
+      <p>Improve your spoken English, reading comprehension, and academic vocabulary — for students and professionals alike.</p>
+      <div class="help-card-link">Get started</div>
+    </a>
+    <a class="help-card fade-up" href="#resources" style="transition-delay:.21s">
+      <div class="help-card-icon">🌍</div>
+      <h3>Study or Move Abroad</h3>
+      <p>Preparing for the IB curriculum or a move to the UK? Get specialised mentorship to make the transition smooth.</p>
+      <div class="help-card-link">Get started</div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="about-inner">
+  <div class="about-text fade-up">
+    <div class="tag-line">About Surabhi</div>
+    <h2>Hi, I'm <em>Surabhi Mehrotra</em></h2>
+    <p>I'm an English Language Trainer, Academic Writer, and qualified Assistant Professor in India, with over 10 years of experience teaching both adolescents and adults. A graduate in English and Communication Studies, I hold certificates from the University Grants Commission and the British Council.</p>
+    <p>My work focuses on bridging gaps in language proficiency for students of all age groups and working professionals — tailoring every course to specific goals. I've mentored students transitioning to the IB curriculum and moving to schools abroad, particularly in the UK.</p>
+    <p>I'm deeply passionate about reading across genres, and I strive to help every learner develop a boundless vision and an urge to create — qualities that serve them throughout their lives.</p>
+  </div>
+  <div class="about-creds fade-up" style="transition-delay:.15s">
+    <div class="cred-row">
+      <div class="cred-icon">🎓</div>
+      <div class="cred-info"><strong>PhD Researcher — University of Essex, UK</strong><span>Department of Language and Linguistics, Colchester Campus</span></div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-icon">📜</div>
+      <div class="cred-info"><strong>MA English with Communication Studies</strong><span>Christ University, Bangalore (2019)</span></div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-icon">🏅</div>
+      <div class="cred-info"><strong>UGC — National Eligibility Test</strong><span>Qualified for Assistant Professorship, India (2018)</span></div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-icon">🇬🇧</div>
+      <div class="cred-info"><strong>British Council Certified</strong><span>English Language Teaching, Christ University Bangalore</span></div>
+    </div>
+    <div class="cred-row">
+      <div class="cred-icon">👩‍🏫</div>
+      <div class="cred-info"><strong>10+ Years of Teaching Experience</strong><span>School, university & corporate learners across India</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FREE RESOURCES -->
+<section id="resources">
+  <div class="section-header fade-up">
+    <div class="eyebrow">Free Resources</div>
+    <h2>Explore My <em>Best Content</em></h2>
+    <p>Articles, guides, and tips you can use right now — completely free.</p>
+  </div>
+  <div class="resources-grid">
+    <a class="res-card fade-up" href="#contact">
+      <div class="res-card-thumb">📝</div>
+      <div class="res-card-body">
+        <div class="res-tag">Study Skills</div>
+        <h3>How to Actually Remember What You Read</h3>
+        <p>Practical evidence-based techniques to improve reading retention — for students preparing for exams or research.</p>
+      </div>
+      <div class="res-card-footer"><span class="res-level">All Levels</span><span class="res-arrow">Read →</span></div>
+    </a>
+    <a class="res-card fade-up" href="#contact" style="transition-delay:.08s">
+      <div class="res-card-thumb">✍️</div>
+      <div class="res-card-body">
+        <div class="res-tag">Academic Writing</div>
+        <h3>A Beginner's Guide to Writing a Literature Review</h3>
+        <p>Step-by-step guide to structuring, sourcing, and writing your first literature review — with examples.</p>
+      </div>
+      <div class="res-card-footer"><span class="res-level">University Level</span><span class="res-arrow">Read →</span></div>
+    </a>
+    <a class="res-card fade-up" href="#contact" style="transition-delay:.16s">
+      <div class="res-card-thumb">🧠</div>
+      <div class="res-card-body">
+        <div class="res-tag">Critical Thinking</div>
+        <h3>5 Thinking Traps Every Student Needs to Know</h3>
+        <p>Common cognitive biases that trip up students in exams and essays — and how to avoid them.</p>
+      </div>
+      <div class="res-card-footer"><span class="res-level">Grades 7–12</span><span class="res-arrow">Read →</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- PHD IN UK -->
+<section id="phd">
+<div class="phd-inner">
+  <div class="phd-text fade-up">
+    <div class="eyebrow">PhD in the UK</div>
+    <h2>My Research on <em>Learning & Emotion</em></h2>
+    <p>At the University of Essex, I'm investigating how Social and Emotional Learning (SEL) shapes the academic emotions of undergraduate STEM students in India.</p>
+    <p>This research sits at the intersection of language education, emotional psychology, and STEM pedagogy — with implications for how we design English courses for science students.</p>
+    <ul class="phd-bullets">
+      <li>How SEL-integrated language courses affect achievement emotions (enjoyment, anxiety, boredom)</li>
+      <li>Bridging ESL curriculum design with emotional intelligence frameworks</li>
+      <li>Generating evidence applicable to Indian higher education policy</li>
+      <li>Working under Dr Nasser Jabbari & Dr Christina Gkonou at Essex</li>
+    </ul>
+  </div>
+  <div class="fade-up" style="transition-delay:.15s">
+    <div class="phd-card">
+      <span class="phd-card-badge">PhD Thesis — Ongoing</span>
+      <h3>Exploring the Impact of SEL-Integrated Language Courses on Achievement Emotions of Undergraduate STEM Students in India</h3>
+      <p>A doctoral study at the Department of Language and Linguistics, University of Essex. Investigating how social and emotional learning woven into English language instruction affects how STEM undergraduates feel about — and perform in — their studies.</p>
+      <div class="phd-card-meta">
+        <strong>Supervisors:</strong> Dr Nasser Jabbari &amp; Dr Christina Gkonou<br>
+        <strong>Institution:</strong> University of Essex, Colchester Campus
+      </div>
+      <div class="phd-tags">
+        <span class="phd-tag">Social-Emotional Learning</span>
+        <span class="phd-tag">Achievement Emotions</span>
+        <span class="phd-tag">Language Education</span>
+        <span class="phd-tag">STEM Students</span>
+        <span class="phd-tag">ESL Curriculum</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ESSAY COMPETITIONS -->
+<section id="essays">
+<div style="max-width:1180px;margin:0 auto;padding:5rem 5%">
+
+  <div class="section-header fade-up">
+    <div class="eyebrow">🏆 Now Open</div>
+    <h2>Essay <em>Competitions 2026</em></h2>
+    <p>A curated list of prestigious global competitions for school students — with supervised preparation sessions and detailed feedback available under my guidance.</p>
+  </div>
+
+  <div class="ec-grid">
+
+    <a class="ec-card fade-up" href="https://www.lumiere-education.com/lumiere-scholars-essay-award" target="_blank" rel="noopener">
+      <div class="ec-card-thumb">✍️</div>
+      <div class="ec-card-body">
+        <span class="ec-dbadge">Deadline: 26 Apr</span>
+        <h3>Lumiere Scholars Essay Award</h3>
+        <p>Prestigious research-oriented essay award for high school students globally.</p>
+      </div>
+      <div class="ec-card-footer"><span class="ec-age">👥 Grades 9–12</span><span class="ec-arrow">View →</span></div>
+    </a>
+
+    <a class="ec-card fade-up" href="https://www.royalcwsociety.org/writing-competition" target="_blank" rel="noopener" style="transition-delay:.07s">
+      <div class="ec-card-thumb">🌍</div>
+      <div class="ec-card-body">
+        <span class="ec-dbadge">Deadline: 30 Apr</span>
+        <h3>Queen's Commonwealth Essay Competition</h3>
+        <p>The world's oldest international schools' writing competition — open to Commonwealth students.</p>
+      </div>
+      <div class="ec-card-footer"><span class="ec-age">👥 Ages 11–18</span><span class="ec-arrow">View →</span></div>
+    </a>
+
+    <a class="ec-card fade-up" href="https://www.immerse.education/blog-competition-2026/" target="_blank" rel="noopener" style="transition-delay:.14s">
+      <div class="ec-card-thumb">📝</div>
+      <div class="ec-card-body">
+        <span class="ec-dbadge">Deadline: 30 Apr</span>
+        <h3>Immerse Education Blog Competition</h3>
+        <p>Share your ideas and perspectives in this globally recognised blog writing competition.</p>
+      </div>
+      <div class="ec-card-footer"><span class="ec-age">👥 Ages 13–18</span><span class="ec-arrow">View →</span></div>
+    </a>
+
+    <a class="ec-card fade-up" href="https://ccir.smapply.org/prog/cambridge_rethink_2026/" target="_blank" rel="noopener" style="transition-delay:.21s">
+      <div class="ec-card-thumb">🏛️</div>
+      <div class="ec-card-body">
+        <span class="ec-dbadge">Deadline: 10 May</span>
+        <h3>Cambridge Re:think Essay Competition 2026</h3>
+        <p>Challenge your thinking with Cambridge's prestigious essay competition for secondary students.</p>
+      </div>
+      <div class="ec-card-footer"><span class="ec-age">👥 Ages 11–18</span><span class="ec-arrow">View →</span></div>
+    </a>
+
+    <a class="ec-card fade-up" href="https://www.johnlockeinstitute.com/essay-competition" target="_blank" rel="noopener" style="transition-delay:.28s">
+      <div class="ec-card-thumb">🔑</div>
+      <div class="ec-card-body">
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap">
+          <span class="ec-dbadge urgent">Reg: 31 Mar</span>
+          <span class="ec-dbadge">Sub: 31 May</span>
+        </div>
+        <h3>John Locke Institute Essay Competition</h3>
+        <p>One of the most respected global competitions — philosophy, politics, economics, history and more.</p>
+      </div>
+      <div class="ec-card-footer"><span class="ec-age">👥 Ages 13–18+</span><span class="ec-arrow">View →</span></div>
+    </a>
+
+  </div>
+
+  <!-- Pricing — matches the dark navy card style of the #phd section -->
+  <div class="ec-pricing-wrap fade-up">
+    <div class="ecp-left">
+      <div class="eyebrow" style="color:var(--gold);margin-bottom:.7rem">Supervised Preparation</div>
+      <h3>Write under Surabhi's <em>guidance</em></h3>
+      <p class="ecp-intro">Sessions run from late March through April. Sign up by <strong>13th March</strong> to secure your spot and get priority scheduling.</p>
+      <table class="ec-tbl">
+        <thead>
+          <tr><th>Competitions</th><th>Sessions</th><th>Fee</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1 competition</td><td>4 sessions</td><td>₹4,400</td></tr>
+          <tr><td>2 competitions</td><td>8 sessions</td><td>₹8,400</td></tr>
+          <tr><td>3 competitions</td><td>12 sessions</td><td>₹12,300</td></tr>
+          <tr><td>4+ competitions</td><td>16 sessions</td><td>₹15,800</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ecp-right">
+      <div class="ec-feedback-box">
+        <div class="eyebrow" style="color:var(--gold);margin-bottom:.5rem">Essay Feedback Only</div>
+        <div class="ec-big-price">₹3,199 <span>/ essay</span></div>
+        <p>One round of detailed written feedback on your completed essay — no sessions required. Perfect for confident, independent writers.</p>
+        <div class="ec-ticks">✓ Detailed comments &nbsp;·&nbsp; ✓ Structure review &nbsp;·&nbsp; ✓ Argument analysis</div>
+      </div>
+      <div class="ec-notice-box">⏰ <strong>Sign up by 13th March.</strong> Sessions run late March through April, and into early May if needed to meet certain deadlines.</div>
+      <a class="ec-signup-btn" href="#contact">Sign Up Now →</a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- SU.BLOG -->
+<section id="blog">
+  <div class="section-header fade-up">
+    <div class="eyebrow">Su.Blog</div>
+    <h2>Latest from <em>the Blog</em></h2>
+    <p>Personal essays, teaching reflections, and research insights — written for curious learners.</p>
+  </div>
+  <div class="blog-grid">
+    <a class="blog-card fade-up" href="#contact">
+      <div class="blog-cat">Language Learning</div>
+      <h3>Why Your Child's English Doesn't Improve Despite Tuition</h3>
+      <p>Most language courses focus on grammar rules. Here's what actually builds fluency — and why the emotional environment of learning matters just as much.</p>
+      <div class="blog-card-footer"><span class="blog-date">March 2026</span><span class="blog-read">Read →</span></div>
+    </a>
+    <a class="blog-card fade-up" href="#contact" style="transition-delay:.08s">
+      <div class="blog-cat">PhD Life</div>
+      <h3>What It's Really Like to Do a PhD in the UK as an Indian Student</h3>
+      <p>The paperwork, the culture shock, the intellectual joy — an honest reflection on pursuing doctoral research abroad.</p>
+      <div class="blog-card-footer"><span class="blog-date">February 2026</span><span class="blog-read">Read →</span></div>
+    </a>
+    <a class="blog-card fade-up" href="#contact" style="transition-delay:.16s">
+      <div class="blog-cat">Teaching</div>
+      <h3>How I Teach Critical Thinking to 12-Year-Olds (And Why It Works)</h3>
+      <p>A look inside my classroom — the activities, the debates, and the surprising moments when young minds start to question everything.</p>
+      <div class="blog-card-footer"><span class="blog-date">January 2026</span><span class="blog-read">Read →</span></div>
+    </a>
+  </div>
+  <a class="see-all" href="#contact">See all posts </a>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+<div class="testi-inner">
+  <div class="section-header fade-up">
+    <div class="eyebrow">Student Voices</div>
+    <h2>What <em>Learners Say</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="tcard fade-up">
+      <div class="tcard-stars">★★★★★</div>
+      <div class="tcard-text">"Surabhi's critical thinking course completely changed how I approach problems. I now question, analyse, and reason before jumping to conclusions."</div>
+      <div class="tcard-author"><div class="tcard-av">A</div><div><div class="tcard-name">Aarav M.</div><div class="tcard-role">Grade 10 Student, Mumbai</div></div></div>
+    </div>
+    <div class="tcard fade-up" style="transition-delay:.08s">
+      <div class="tcard-stars">★★★★★</div>
+      <div class="tcard-text">"I was completely lost writing my MA dissertation. After just a few sessions, I had a clear structure, strong arguments, and the confidence to submit."</div>
+      <div class="tcard-author"><div class="tcard-av">S</div><div><div class="tcard-name">Sneha R.</div><div class="tcard-role">MA Student, Delhi</div></div></div>
+    </div>
+    <div class="tcard fade-up" style="transition-delay:.16s">
+      <div class="tcard-stars">★★★★★</div>
+      <div class="tcard-text">"Her Spoken English course gave my daughter the confidence to present in front of her entire class. Truly transformative teaching."</div>
+      <div class="tcard-author"><div class="tcard-av">P</div><div><div class="tcard-name">Pradeep K.</div><div class="tcard-role">Parent, Bangalore</div></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+<div class="nl-inner fade-up">
+  <div class="eyebrow">📬 Su.Newsletter</div>
+  <h2>Get <em>Weekly Insights</em><br>in Your Inbox</h2>
+  <p>Every week I share practical language tips, study strategies, research reflections, and resources for learners and educators. It's free, and always will be.</p>
+  <div class="nl-form-lg">
+    <input type="email" placeholder="your@email.com"/>
+    <button type="button" onclick="nlSubmit(this)">Join Free →</button>
+  </div>
+  <p class="nl-privacy">No spam, ever. Unsubscribe anytime.</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+<div id="contact">
+  <div class="contact-left fade-up">
+    <div class="eyebrow">Get in Touch</div>
+    <h2>Let's Start a <em>Conversation</em></h2>
+    <p>Whether you're a student, a parent, an institution, or a fellow researcher — I'd love to hear from you. Book a free discovery call, enquire about a course, or just say hello.</p>
+    <div class="contact-items">
+      <div class="ci"><div class="ci-icon">✉️</div><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f6c722d2a272e2c5f7a6c6c7a67317e7c316a74">[email&#160;protected]</a></div>
+      <div class="ci"><div class="ci-icon">📍</div>India · Online sessions available worldwide</div>
+      <div class="ci"><div class="ci-icon">🎓</div>University of Essex, Colchester, UK</div>
+    </div>
+  </div>
+  <div class="contact-form fade-up" style="transition-delay:.15s">
+    <div class="fg-row">
+      <div class="fg"><label>First Name</label><input type="text" placeholder="Rahul"/></div>
+      <div class="fg"><label>Last Name</label><input type="text" placeholder="Verma"/></div>
+    </div>
+    <div class="fg"><label>Email</label><input type="email" placeholder="you@example.com"/></div>
+    <div class="fg">
+      <label>I'm interested in</label>
+      <select>
+        <option value="">Select a topic…</option>
+        <option>Critical Thinking (Grades 5–7)</option>
+        <option>Critical Thinking (Grade 10)</option>
+        <option>Research & Paper Writing</option>
+        <option>Language & Linguistic Skills</option>
+        <option>Spoken English & Public Speaking</option>
+        <option>IB & International Transition</option>
+        <option>Professional English</option>
+        <option>PhD in the UK — General Query</option>
+        <option>General Enquiry</option>
+      </select>
+    </div>
+    <div class="fg"><label>Message</label><textarea placeholder="Tell me a bit about yourself and what you're looking for…"></textarea></div>
+    <button class="btn-send" onclick="formSubmit(this)">Send Message →</button>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="ft-brand">
+      <a class="logo" href="#">Surabhi <em>Mehrotra</em></a>
+      <p>English Language Trainer, Academic Writer & PhD Researcher helping learners across India and beyond.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Free Content</h4>
+      <a href="#resources">Articles & Guides</a>
+      <a href="#blog">Su.Blog</a>
+      <a href="#essays">Essay Competitions 2026</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#phd">PhD in the UK</a>
+    </div>
+    <div class="ft-col">
+      <h4>Courses</h4>
+      <a href="#help">Critical Thinking</a>
+      <a href="#help">Research Writing</a>
+      <a href="#help">Spoken English</a>
+      <a href="#help">IB Transition</a>
+      <a href="#help">Corporate English</a>
+    </div>
+    <div class="ft-col">
+      <h4>More</h4>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="/cdn-cgi/l/email-protection#d5a6b8e7e0ede4e695b0a6a6b0adfbb4b6fba0be">Email Me</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Surabhi Mehrotra. All rights reserved.</p>
+    <div class="social-row">
+      <a class="social-btn" href="#" title="LinkedIn">in</a>
+      <a class="social-btn" href="#" title="Twitter">𝕏</a>
+      <a class="social-btn" href="#" title="Instagram">ig</a>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
